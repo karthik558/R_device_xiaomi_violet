@@ -182,6 +182,10 @@ case "$soc_id" in
     echo 2-5     > /dev/cpuset/system-background/cpus
     echo 2-5     > /dev/cpuset/restricted/cpus
 
+    # Enable idle state listener
+    echo 1 > /sys/class/drm/card0/device/idle_encoder_mask
+    echo 100 > /sys/class/drm/card0/device/idle_timeout_ms
+
     # Turn on sleep modes.
     echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
     ;;
@@ -295,6 +299,10 @@ case "$soc_id" in
     echo 4-5     > /dev/cpuset/background/cpus
     echo 2-5     > /dev/cpuset/system-background/cpus
     echo 2-5     > /dev/cpuset/restricted/cpus
+
+    # Enable idle state listener
+    echo 1 > /sys/class/drm/card0/device/idle_encoder_mask
+    echo 100 > /sys/class/drm/card0/device/idle_timeout_ms
 
     # Turn on sleep modes.
     echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
