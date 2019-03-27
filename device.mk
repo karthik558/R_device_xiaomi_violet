@@ -287,7 +287,8 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # Overlays
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+    NoCutoutOverlay \
+    NotchBarKiller
 
 # Power
 PRODUCT_PACKAGES += \
