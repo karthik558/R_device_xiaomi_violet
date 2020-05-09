@@ -77,7 +77,6 @@ on boot
 
     # Set thermal mode to evaluation
     chown system system /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 10
 
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
