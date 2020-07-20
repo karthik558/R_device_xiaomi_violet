@@ -93,16 +93,6 @@ fi
 case "$soc_id" in
         "355" | "369" | "377" | "380" | "384" )
 
-    # Core control parameters on silver
-    echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
-    echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
-    echo 60 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
-    echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
-    echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
-    echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
-    echo 8 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
-    echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
-
     # Setting b.L scheduler parameters
     # default sched up and down migrate values are 90 and 85
     echo 65 > /proc/sys/kernel/sched_downmigrate
@@ -217,16 +207,6 @@ esac
 
 case "$soc_id" in
     "365" | "366" )
-
-    # Core control parameters on silver
-    echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
-    echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
-    echo 60 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
-    echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
-    echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
-    echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
-    echo 8 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
-    echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
 
     # Setting b.L scheduler parameters
     # default sched up and down migrate values are 71 and 65
