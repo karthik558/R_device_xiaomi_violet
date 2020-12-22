@@ -114,6 +114,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # FRP
 /dev/block/platform/soc/1d84000.ufshc/by-name/frp       0600   system     system
+/dev/block/platform/soc/7c4000.sdhci/by-name/frp        0600   system     system
 
 # Kmsg device
 /dev/kmsg                 0620   root       system
