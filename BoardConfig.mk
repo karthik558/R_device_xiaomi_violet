@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/davinci
+DEVICE_PATH := device/xiaomi/violet
 
 BUILD_BROKEN_DUP_RULES := true
 
 # Inherit from proprietary files
-include vendor/xiaomi/davinci/BoardConfigVendor.mk
+include vendor/xiaomi/violet/BoardConfigVendor.mk
 
 # Architecture
 TARGET_ARCH := arm64
@@ -40,10 +40,9 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := davinci,davinciin
+TARGET_OTA_ASSERT_DEVICE := violet
 
 # Audio
-AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
@@ -76,6 +75,9 @@ TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
 
+# Display density
+TARGET_SCREEN_DENSITY := 440
+
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
@@ -84,10 +86,6 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # FM
 BOARD_HAVE_QCOM_FM := true
-
-# FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.davinci
-TARGET_USES_FOD_ZPOS := true
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
@@ -98,24 +96,16 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/hidl/manifest-qva.xml
-ODM_MANIFEST_SKUS += davinci
-ODM_MANIFEST_DAVINCI_FILES := \
-    $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml \
-    $(DEVICE_PATH)/configs/hidl/manifest-qva.xml
-
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_davinci
-TARGET_RECOVERY_DEVICE_MODULES := libinit_davinci
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
-
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := davinci_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
+TARGET_KERNEL_CONFIG := violet_defconfig
+
+TARGET_KERNEL_SOURCE := kernel/xiaomi/violet
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa88000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
@@ -131,13 +121,13 @@ TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
 # Partitions
-BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
-BOARD_DTBOIMG_PARTITION_SIZE := 33554432
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 55371083776
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 116748414464
+BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -182,7 +172,6 @@ TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Verified Boot

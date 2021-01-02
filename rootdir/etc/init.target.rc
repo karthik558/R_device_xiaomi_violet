@@ -41,21 +41,6 @@ on init
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
-    # Camera motor
-    chown system camera /dev/drv8846_dev
-    chown system camera /dev/akm09970
-    chmod 0660 /dev/drv8846_dev
-    chmod 0660 /dev/akm09970
-
-on init && property:ro.boot.hwc=GLOBAL
-    setprop ro.boot.product.hardware.sku davinci
-
-on init && property:ro.boot.hwc=CN
-    setprop ro.boot.product.hardware.sku davinci
-
-on property:ro.boot.product.hardware.sku=davinci
-    enable vendor.nfc_hal_service
-
 on fs
     mount_all --early
 
@@ -71,7 +56,6 @@ on late-fs
 
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
-    mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
@@ -212,17 +196,3 @@ service vendor.nv_mac /vendor/bin/nv_mac
     user system
     group system inet net_admin wifi net_raw
     oneshot
-
-service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
-    class hal
-    user system
-    group system
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
-    override
-    class hal
-    user nfc
-    group nfc
-    writepid /dev/cpuset/system-background/tasks
-    disabled
