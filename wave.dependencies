@@ -1,0 +1,10 @@
+[
+    {
+        "repository":  "kernel_xiaomi_violet",
+        "target_path": "kernel/xiaomi/violet"
+    },
+    {
+        "repository":  "vendor_xiaomi_violet",
+        "target_path": "vendor/xiaomi/violet"
+    }
+]
