@@ -59,13 +59,14 @@
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
+            android:icon="@drawable/ic_thermal_settings"
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.battery" />
+                android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/thermal_summary" />
