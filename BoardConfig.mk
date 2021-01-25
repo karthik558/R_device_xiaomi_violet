@@ -16,8 +16,6 @@
 
 DEVICE_PATH := device/xiaomi/violet
 
-BUILD_BROKEN_DUP_RULES := true
-
 # Inherit from proprietary files
 include vendor/xiaomi/violet/BoardConfigVendor.mk
 
