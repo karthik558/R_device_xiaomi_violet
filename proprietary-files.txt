@@ -94,6 +94,7 @@ system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/eyelineblush.cng
 vendor/etc/camera/lf_facerank_model.bin
+vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/vidhance_calibration_F7B
 vendor/etc/scve/facereco/gModel.dat
@@ -270,6 +271,8 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libFaceGrade.so
+vendor/lib64/libmegface.so
+vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libmibokeh_660.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
