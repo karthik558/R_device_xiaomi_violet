@@ -1,7 +1,9 @@
 [
     {
-        "repository":  "kernel_xiaomi_violet",
-        "target_path": "kernel/xiaomi/violet"
+        "repository":  "raghavt20/kernel_sm6150",
+        "target_path": "kernel/xiaomi/violet",
+        "remote"     : "github",
+        "branch"     : "r"
     },
     {
         "repository":  "vendor_xiaomi_violet",
