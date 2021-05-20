@@ -75,6 +75,12 @@ vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
 # Audio firmware
 vendor/firmware/tas2563_uCDSP.bin
 
+# Audio FX modules
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libshoebox.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
