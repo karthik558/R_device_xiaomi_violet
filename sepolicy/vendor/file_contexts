@@ -14,6 +14,9 @@
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.violet        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.violet    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 
+# IR
+/dev/spidev[0-9]\.1                                                  u:object_r:lirc_device:s0
+
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
 
