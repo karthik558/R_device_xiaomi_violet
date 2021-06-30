@@ -744,8 +744,6 @@ vendor/lib64/libqcmaputils.so|0f28c7e0461054ee0dd752b2656c185fbce11153
 vendor/lib64/libqcrildatactl.so|03c4ef78473960235747c60f191a51d115d52727
 vendor/lib64/libqcrilFramework.so|4a4a3177ca2cb9747b64c2ca88d60defeb85d058
 vendor/lib64/libqdi.so|0f55691f00c60efc48326e412898d23f987f9f0d
-vendor/lib64/libqdp.so|3a33e8f84f3f99ebdd4847425abd2d955e51feec
-vendor/lib64/libril-qc-hal-qmi.so|cafd6e2e2605199b8c62031c875a0e804f9e0f88
 vendor/lib64/libril-qc-logger.so|8c7ee52673f603643e4c7e336ee7a25298ff58a6
 vendor/lib64/librilqmiservices.so|d27159e7796072facbd2eb2cec2ac19fadac490d
 vendor/lib64/libsystem_health_mon.so|1afcf26183ddd860f0ce40ceceb7b1578ea36b91
@@ -780,6 +778,10 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql|0734c6a2863ed
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd718ecdc8d3cfac3a0b2b2c7e8c506
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb48906b37885e060429f79c9fd6bdbf
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
+
+# RIL - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/lib64/libqdp.so|3e4a0e68a4e38ad722d0f9091840396fe9420edd
+vendor/lib64/libril-qc-hal-qmi.so|24cba6ddab2a101ef1c23089246780184c52f58e
 
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service
