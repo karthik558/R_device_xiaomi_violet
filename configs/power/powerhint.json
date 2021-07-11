@@ -5,7 +5,7 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1248000"
+        "1209600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -15,7 +15,8 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1248000",
+        "1363200",
+        "1209600",
         "576000"
       ],
       "ResetOnInit": true
@@ -25,8 +26,8 @@
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1939200",
-        "1555200"
+        "1900800",
+        "1516800"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -36,8 +37,9 @@
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1555200",
-        "1248000",
+        "1516800",
+        "1209600",
+        "768000",
         "652800"
       ],
       "ResetOnInit": true
@@ -58,7 +60,7 @@
       "Values": [
         "0",
         "3",
-        "7"
+        "5"
       ],
       "ResetOnInit": true
     },
@@ -104,6 +106,7 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
+        "50",
         "40",
         "10"
       ],
@@ -215,7 +218,7 @@
       "Name": "L3LittleClusterMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/min_freq",
       "Values": [
-        "1459200000",
+        "1363200000",
         "300000000"
       ],
       "ResetOnInit": true
@@ -233,7 +236,7 @@
       "Name": "L3BigClusterMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu6-cpu-l3-lat/min_freq",
       "Values": [
-        "1459200000",
+        "1363200000",
         "300000000"
       ],
       "ResetOnInit": true
@@ -295,13 +298,13 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1555200"
+      "Value": "1516800"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1209600"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -313,7 +316,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1363200"
     },
     {
       "PowerHint": "INTERACTION",
@@ -439,13 +442,13 @@
       "PowerHint": "LAUNCH",
       "Node": "L3LittleClusterMinFreq",
       "Duration": 2000,
-      "Value": "1459200000"
+      "Value": "1363200000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "L3BigClusterMinFreq",
       "Duration": 2000,
-      "Value": "1459200000"
+      "Value": "1363200000"
     },
     {
       "PowerHint": "AUDIO_LAUNCH",
