@@ -4,6 +4,8 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state           
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_timeout_ms           u:object_r:vendor_sysfs_graphics:s0
 
 # Label wakeup nodes symlinks from /sys/class/wakeup
+genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd/wakeup                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd-secure/wakeup                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_aac/wakeup                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_alac/wakeup                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_amrnb/wakeup                                u:object_r:sysfs_wakeup:s0
