@@ -17,28 +17,20 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common RohieOS stuff.
+# Inherit some common xDroid stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
-PRODUCT_NAME := aosp_violet
+PRODUCT_NAME := xdroid_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Rohie Stuffs
-ROHIE_MAINTAINER := KARTHIK.LAL
-ROHIE_BUILD_TYPE := OFFICIAL
-
-# Gapps
-USE_GAPPS := true
-IS_PHONE := true
-TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210705.001 7380771 release-keys" \

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_violet.mk
+    $(LOCAL_DIR)/xdroid_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_violet-user \
-    aosp_violet-userdebug \
-    aosp_violet-eng
+    xdroid_violet-user \
+    xdroid_violet-userdebug \
+    xdroid_violet-eng
