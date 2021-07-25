@@ -25,6 +25,8 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common xDroid stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
 
 PRODUCT_NAME := xdroid_violet
 PRODUCT_DEVICE := violet
