@@ -1,19 +1,19 @@
 # All unpinned blobs were pulled from VIOLETINGlobal_V12.0.5.0.QFHINXM
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
-vendor/lib/libcdsp_default_listener.so
+# ADSP - from LA.UM.9.1.r1-10200-SMxxx0.0
+vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
+vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|77f5aaf6d773ee545e39bc5fdc99c65434c05379
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib64/libadsp_default_listener.so|f4738e7bf0d5205e9d3b5e290a931d03d2ef700d
+vendor/lib64/libadsprpc.so|77bcb86aceb726f45ef853f10d27d86211db4429
+vendor/lib64/libcdsp_default_listener.so|49de35be8f90e282de225596ab90661fa8ac4422
+vendor/lib64/libcdsprpc.so|daa90f06b3bdb89779f1dac92bc77ee5455a22b6
+vendor/lib64/libmdsprpc.so|0e3d865eb12827de8bef517e54be1b42c4c82484
+vendor/lib64/libsdsprpc.so|f1f31d4a306dbd6fef2f1b54cf1c7410c37900aa
+vendor/lib/libadsp_default_listener.so|0661159353dddedd0798117ff2e1c31396a02292
+vendor/lib/libadsprpc.so|c58fc8eb6c0919dc5c21e992a75996446d0107e5
+vendor/lib/libcdsp_default_listener.so|5e90f604ac99493cfc08a89a2b58f5cf7bfb9683
 
 # ADSP modules - from sweet-user 11 RKQ1.200826.002 V12.5.3.0.RKFEUXM
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
@@ -469,37 +469,37 @@ system_ext/lib64/libfm-hci.so|0da384e2fd4809bb39a36fb25d3c6c0325cea0c3
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|5ae89d3eaad3561d881c2bc73efcef2ec55372d2
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|86e247473332ecb950164eb115d7fea6214c7a45
 
-# Graphics
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/hw/vulkan.adreno.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libCB.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libOpenCL.so
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
+# Graphics - from LA.UM.9.1.r1-10200-SMxxx0.0
+vendor/lib64/egl/eglSubDriverAndroid.so|d35fe73d8885859748302e091788754d56364206
+vendor/lib64/egl/libEGL_adreno.so|1dc015c699cce26df3e2a9d97f2166f1e7f253b4
+vendor/lib64/egl/libGLESv1_CM_adreno.so|0a2a648ca2dcd887ea62860bbfa2ef397f01d42d
+vendor/lib64/egl/libGLESv2_adreno.so|2593f6b4bd8308701432c4c9f3ab7602ba25e77d
+vendor/lib64/egl/libq3dtools_adreno.so|189b9c3d400c6a98c87582b8df0910530cba6d44
+vendor/lib64/egl/libq3dtools_esx.so|55127e713bc3a2d6d426fa54cc21bb97544c48cb
+vendor/lib64/hw/vulkan.adreno.so|a5c0fe464174e84da9b25230e987dc73e7af68d5
+vendor/lib64/libadreno_utils.so|ee13afa147a0632741c1e89bc4efc56c974f6960
+vendor/lib64/libC2D2.so|175115cc36fd471f9eb83af76be21b5f602b9460
+vendor/lib64/libc2d30_bltlib.so|b7c7bbc41f317833927d9bf75fbf9b411dd63a96
+vendor/lib64/libCB.so|8fdc524bff216345f20ffedf38d52824a90bca8f
+vendor/lib64/libgsl.so|56b54f7847c52200c5bae7352e893008be5dbcc1
+vendor/lib64/libllvm-glnext.so|319418a255b25f89725c85216245613b072992d0
+vendor/lib64/libllvm-qcom.so|9a351e8ccf9a1d271eab30601cbe7dc81aee11b0
+vendor/lib64/libOpenCL.so|0c5d889028ecb59ed9bb0c7522094dbebc468954
+vendor/lib/egl/eglSubDriverAndroid.so|c37d7fd3383e16617dcb874eceffee6b5a3c67bf
+vendor/lib/egl/libEGL_adreno.so|b66364c940c6174910a6807322193b3fb0f5d6c7
+vendor/lib/egl/libGLESv1_CM_adreno.so|715f3463528f1e74ffa02627ee5916a09e0748f5
+vendor/lib/egl/libGLESv2_adreno.so|18b992c5b50434abfadd44b197a5afc0e36195c3
+vendor/lib/egl/libq3dtools_adreno.so|9ec9c053592e58be935e8ae5e0a9d362c101773a
+vendor/lib/egl/libq3dtools_esx.so|abd0ff6365235cdb7afc574dd2f87318df1c8872
+vendor/lib/hw/vulkan.adreno.so|b764c62d9bdd4ccea6f041b3f390c424b9c9303b
+vendor/lib/libadreno_utils.so|51d2e395928e06e5f49e38d5962b29c71dce3e23
+vendor/lib/libC2D2.so|91f015cad79024fdbb6a5603cce48693e58a4510
+vendor/lib/libc2d30_bltlib.so|71703a543760e40ba26cde07c2d41416cc9331ec
+vendor/lib/libCB.so|6c8d611fe0ccb6d12cf2f669c575a1ee97efc2a8
+vendor/lib/libgsl.so|61ca34a7b7e4823160d223131c6cfaa1e7619cfa
+vendor/lib/libllvm-glnext.so|05371dde7b501e1498bd660817c7b3b523c54df9
+vendor/lib/libllvm-qcom.so|8a55c01a50eff9923da7f3b81cd9ba7aff5e1bc0
+vendor/lib/libOpenCL.so|087fe776117a61287e2301061feeeb060ebb60a9
 
 # Graphics firmware
 vendor/firmware/a612_rgmu.bin
