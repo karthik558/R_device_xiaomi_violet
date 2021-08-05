@@ -1,12 +1,18 @@
 [
     {
-        "repository":  "raghavt20/kernel_sm6150",
+        "repository" : "LineageOS/android_hardware_xiaomi",
+        "target_path": "hardware/xiaomi",
+        "remote"     : "github",
+        "branch"     : "lineage-18.1"
+    },
+    {
+        "repository" : "raghavt20/kernel_sm6150",
         "target_path": "kernel/xiaomi/violet",
         "remote"     : "github",
         "branch"     : "r"
     },
     {
-        "repository":  "vendor_xiaomi_violet",
+        "repository" : "vendor_xiaomi_violet",
         "target_path": "vendor/xiaomi/violet"
     }
 ]
