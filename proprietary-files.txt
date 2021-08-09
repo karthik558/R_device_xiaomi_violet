@@ -72,7 +72,6 @@ vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
 
 # Audio firmware
 vendor/firmware/tas2563_uCDSP.bin
