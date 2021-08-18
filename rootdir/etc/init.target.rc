@@ -51,3 +51,7 @@ on boot
 # USB Fastcharge
   chown system system /sys/kernel/fast_charge/force_fast_charge
   chmod 0660 /sys/kernel/fast_charge/force_fast_charge
+
+# Battery Saver
+  chown system system /sys/module/battery_saver/parameters/enabled
+  chmod 0664 /sys/module/battery_saver/parameters/enabled

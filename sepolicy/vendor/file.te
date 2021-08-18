@@ -21,3 +21,6 @@ type sysfs_scharge, sysfs_type, fs_type;
 
 # Vibrator
 type vibrator_dev, sysfs_type, fs_type;
+
+# Battery Saver
+type sysfs_battery_saver, fs_type, sysfs_type;
