@@ -102,6 +102,12 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# HALs
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/sm8150/display \
+    hardware/qcom-caf/sm8150/media \
+    hardware/qcom-caf/sm8150/audio
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -436,3 +442,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.ringtone=Crackle.ogg \
     ro.config.notification_sound=None.ogg \
     ro.config.alarm_alert=Full_of_Wonder.ogg
+
+# Board(QCOM)
+PRODUCT_BOARD_PLATFORM := sm6150
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
