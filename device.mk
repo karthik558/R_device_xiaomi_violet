@@ -421,3 +421,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Sounds (default)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.ringtone=Crackle.ogg \
+    ro.config.notification_sound=None.ogg \
+    ro.config.alarm_alert=Full_of_Wonder.ogg
