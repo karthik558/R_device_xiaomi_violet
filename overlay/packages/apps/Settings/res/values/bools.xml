@@ -14,4 +14,11 @@
 <resources>
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
+
+    <!-- FOD recognizing animation -->
+    <bool name="config_showFODAnimationSettings">false</bool>
+
+    <!-- ScreenOffFOD -->
+    <bool name="config_showScreenoffFOD">false</bool>
+
 </resources>
