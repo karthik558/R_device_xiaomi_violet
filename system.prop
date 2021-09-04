@@ -49,3 +49,8 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+# Octavi-OS
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.octavi.status=2.8 Official
+ro.octavi.maintainer=K A R T H I K
