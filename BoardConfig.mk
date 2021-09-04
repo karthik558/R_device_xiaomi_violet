@@ -16,6 +16,11 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/violet
 
+TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_DUP_RULES := true
+
 # Inherit from proprietary files
 include vendor/xiaomi/violet/BoardConfigVendor.mk
 
