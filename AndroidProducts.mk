@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 Wave-OS
+# Copyright (C) 2020-2021 Octavi-OS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/wave_violet.mk
+    $(LOCAL_DIR)/octavi_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    wave_violet-user \
-    wave_violet-userdebug \
-    wave_violet-eng
+    octavi_violet-user \
+    octavi_violet-userdebug \
+    octavi_violet-eng
