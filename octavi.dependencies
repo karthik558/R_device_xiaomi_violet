@@ -6,13 +6,21 @@
         "branch"     : "lineage-18.1"
     },
     {
-        "repository" : "raghavt20/kernel_sm6150",
-        "target_path": "kernel/xiaomi/violet",
+        "repository" : "karthik558/R_device_xiaomi_violet",
+        "target_path": "device/xiaomi/violet",
         "remote"     : "github",
-        "branch"     : "r"
+        "branch"     : "11-R-O"
     },
     {
-        "repository" : "vendor_xiaomi_violet",
-        "target_path": "vendor/xiaomi/violet"
+        "repository" : "karthik558/MsM-4.14-K2-141b",
+        "target_path": "kernel/xiaomi/violet",
+        "remote"     : "github",
+        "branch"     : "eleven-RO"
+    },
+    {
+        "repository" : "karthik558/R_vendor_xiaomi",
+        "target_path": "vendor/xiaomi/violet",
+	"remote"     : "github",
+	"branch"     : "11-R-O"
     }
 ]
