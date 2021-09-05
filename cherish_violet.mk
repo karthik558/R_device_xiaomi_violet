@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 Octavi-OS
+# Copyright (C) 2020-2021 CherishOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,20 +19,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common Octavi-OS stuff.
+# Inherit some common CherishOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common.mk)
 
-PRODUCT_NAME := octavi_violet
+PRODUCT_NAME := cherish_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-#OCTAVI_STUFFS
-OCTAVI_BUILD_TYPE=Official
-TARGET_FACE_UNLOCK_SUPPORTED := true
-OCTAVI_DEVICE_MAINTAINER := KARTHIK.LAL
+# CherishOS STUFFS
+CHERISH_BUILD_TYPE=OFFICIAL
+WITH_GMS := true
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=KARTHIK&NIRANJAN
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="violet-user 9 PKQ1.181203.001 V11.0.8.0.PFHINXM release-keys" \

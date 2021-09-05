@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 Octavi-OS
+# Copyright (C) 2020-2021 CherishOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_violet.mk
+    $(LOCAL_DIR)/cherish_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_violet-user \
-    octavi_violet-userdebug \
-    octavi_violet-eng
+    cherish_violet-user \
+    cherish_violet-userdebug \
+    cherish_violet-eng
